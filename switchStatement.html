@@ -62,7 +62,7 @@
 //   default:
 //     alert( 'Неизвестное значение' );
 // } //здесь выводит только case типа string       
-
+// ------------------------------------  
         
         
 // Задача №1 Изменение switch на if
@@ -89,7 +89,7 @@
 // || browser === 'Opera') {
 //     alert( 'Okay we support these browsers too' )
 // } else {alert( 'We hope that this page looks ok!' )}
-
+// ------------------------------------  
         
         
 // Задача №2 Изменение if на switch
@@ -117,3 +117,25 @@
 //             alert('Вы ввели число 2, а может и 3');
 //             break;
 // }
+// ------------------------------------  
+
+// Задача №3 Функция по возврату условия через switch    
+function caseInSwitch(val) {
+  let answer = "";
+switch (val) {
+    case 1:
+      answer = 'alpha';
+    break;
+    case 2:
+      answer = 'beta';
+    break;
+    case 3:
+      answer = 'gamma';
+    break;
+    case 4:
+      answer = 'delta';
+    break;
+  }
+  return answer;
+}
+caseInSwitch(1);
